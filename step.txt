@@ -1,0 +1,11 @@
+1. create knex init (knexfile.js) and move to db folder
+run : npx knex init
+
+2. make db.js file
+
+3. make a folder for migration and initialitaion migration in there
+run : cd ../db
+run : npx knex migration:make init --migrations-directory db/migrations
+
+4. migrations 
+run : npx knex migrate:latest --knexfile db/knexfile.js
